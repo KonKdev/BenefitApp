@@ -1,0 +1,26 @@
+<table>
+    <thead>
+      <tr>
+        <th>Book Name</th>
+        <th>Customer Name</th>
+        <th>Status</th>
+        <th>Reserved On</th>
+        <th>Return By</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let reservation of reservations">
+        <td>{{ reservation.book }}</td>
+        <td>{{ reservation.customer }}</td>
+        <td>{{ reservation.status }}</td>
+        <td>{{ reservation.reservedOn }}</td>
+        <td>{{ reservation.returnBy }}</td>
+        <td>
+          <button>Edit</button>
+          <button>Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
