@@ -1,4 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* Στυλ για τον πίνακα */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+  }
+  
+  thead {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tbody tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Στυλ για τα κουμπιά */
+  button {
+    padding: 8px 12px;
+    margin: 0 4px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  button:first-of-type {
+    background-color: #007bff; /* Μπλε για το Edit κουμπί */
+  }
+  
+  button:last-of-type {
+    background-color: #dc3545; /* Κόκκινο για το Delete κουμπί */
+  }
+  
